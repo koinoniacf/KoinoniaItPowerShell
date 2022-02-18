@@ -7,6 +7,6 @@ Write-Verbose "Loading defaults for $Function"
     $Default = $KoinoniaIt.$Function.$_
     if (-not $Invocation.BoundParameters.Keys.contains($_) -and $Default) {
         Write-Verbose "Setting `"$_`" to `"$Default`""
-        Set-Variable -Name $_ -Value $Default
+        Set-Variable -Name $_ -Value $Default -WhatIf:$false
     }
 }
