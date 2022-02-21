@@ -1,4 +1,6 @@
-$KoinoniaIt = @{}
-$KoinoniaIt["VerbNoun"] = @{
-  Paramater = "Value"
+[Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseDeclaredVarsMoreThanAssignments", "")]
+$KoinoniaIt = @{
+  VerbNoun = @{
+    Paramater = "Value"
+  }
 }
