@@ -2729,7 +2729,7 @@ foreach ($lan in $ethernet) {
 	#$expireTime = [datetime]::ParseExact($lan.DHCPLeaseExpires,'yyyyMMddHHmmss.000000-300',$null)
 	$expireTime = $lan.DHCPLeaseExpires
 	$expireTimeFormated = Get-Date -Date $expireTime -Format F
-	$expireTimeUntil = New-TimeSpan –Start (Get-Date) –End $expireTime
+	$expireTimeUntil = New-TimeSpan ï¿½Start (Get-Date) ï¿½End $expireTime
 	$days = [Math]::Floor($expireTimeUntil.TotalDays)
 	$hours = [Math]::Floor($expireTimeUntil.TotalHours) - $days * 24
 	$minutes = [Math]::Floor($expireTimeUntil.TotalMinutes) - $hours * 60
@@ -3259,9 +3259,6 @@ function Get-Wallpaper {
 .VERSION 1.0.0
 .GUID b30e98ad-cd0c-4f83-a10d-d5d976221b66
 
-.DESCRIPTION
-Download the latest wallpaper and add to the system wallpaper folder.
-
 .AUTHOR
 Jason Cook
 
@@ -3271,7 +3268,7 @@ Koinonia Christian Fellowship
 #>
 
 <#
-.SYNOPSIS
+.DESCRIPTION
 Download the latest wallpaper and add to the system wallpaper folder.
 
 .PARAMETER Path
