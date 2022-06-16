@@ -12,7 +12,6 @@ Koinonia Christian Fellowship
 Copyright (c) Koinonia Christian Fellowship 2022
 #>
 
-
 <#
 .DESCRIPTION
 This script will find all orphaned GPOs.
