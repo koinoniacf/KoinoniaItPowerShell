@@ -12,7 +12,7 @@
 RootModule = 'KoinoniaIT.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.1.20'
+ModuleVersion = '1.1.21'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
